@@ -1,0 +1,9 @@
+.ss-router__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.ss-router__link:hover {
+  text-decoration: none;
+  color: inherit;
+}

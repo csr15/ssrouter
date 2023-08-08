@@ -1,13 +1,151 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Components Global Styles */
+.ss-container {
+  border-radius: 12px;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  margin: 10px auto;
+  color: #fff;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ss-container h2 {
+  font-weight: bold !important;
+}
+
+/* Fonts preset */
+p {
+  font-size: 12px;
+  margin: 0;
+}
+
+/* Button */
+.ss-btn {
+  padding: 8px 12px;
+  border-radius: 3px;
+  background: #fff;
+  box-shadow: 7px 7px 0px #000;
+  border: 2px solid #000;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.ss-btn:hover {
+  box-shadow: 0px 0px 0px #000;
+  background: #000;
+  color: #fff;
+}
+
+/* ---------------- 
+  Pages
+  -----------------
+*/
+
+/* ======== navbar ======== */
+.navbar {
+  background: transparent;
+  margin-top: 10px;
+}
+
+.nav-link {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* home */
+.ss-home {
+  background: #4e4feb;
+}
+
+/* ======== Home feeds ======== */
+.ss-home__feed {
+  margin: 15px auto 0 auto;
+  gap: 10px;
+  width: 80%;
+}
+
+.ss-home__feed-card-container {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.ss-home__feed-card {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  min-height: 100px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.ss-home__feed-card h2 {
+  color: #202020;
+}
+
+.ss-home__feed h6 {
+  margin-bottom: 10px;
+}
+
+.ss-home__feed-card h6 {
+  color: #575757;
+}
+
+/* ======== pricing ======== */
+.ss-pricing {
+  background: #e55807;
+}
+
+/* ======== features ======== */
+.ss-features {
+  background: #e2801e;
+}
+
+/* ======== account ======== */
+.ss-account {
+  background: #569daa;
+}
+
+/* ======== Private Route ======== */
+.ss-no-access {
+  color: #ef4f4f;
+  background: #fff;
+}
+
+.ss-no-access h3 {
+  font-weight: 600;
+}
+
+/* ======== View Feed ======== */
+.ss-view-feed {
+}
+
+.ss-view-feed h4 {
+  text-align: center;
+  margin: 40px auto;
+  font-weight: 700;
+}
+
+.ss-view-feed img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.ss-view-feed p {
+  font-size: 14px;
+  color: #2c2c2c;
+  text-align: justify;
+  margin: 15px auto 30px auto;
 }
